@@ -35,7 +35,7 @@ const calculatorTool: Tool<typeof CalculatorSchema> = {
  * 2. Setup DemandAI Kernel
  */
 async function main() {
-  console.log('Initializing DemandAI Kernel...');
+  console.log('Initializing aidemand Kernel...');
 
   // Initialize Persistence Layer (PostgreSQL)
   // Ensure DATABASE_URL is set in your environment
@@ -58,7 +58,7 @@ async function main() {
   const userPrompt = 'Calculate 1532 + 2741, then multiply the result by 42.';
 
   console.log(`\nInput: ${userPrompt}\n`);
-  process.stdout.write('DemandAI: ');
+  process.stdout.write('aidemand: ');
 
   try {
     for await (const event of ai.ask(conversationId, userPrompt)) {
