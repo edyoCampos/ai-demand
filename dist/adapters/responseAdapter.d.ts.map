@@ -1,0 +1,1 @@
+{"version":3,"file":"responseAdapter.d.ts","sourceRoot":"","sources":["../../src/adapters/responseAdapter.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,WAAW,EAAE,MAAM,0BAA0B,CAAA;AAE3D,qBAAa,eAAe;IAC1B,MAAM,CAAC,aAAa,CAAC,KAAK,EAAE,OAAO,GAAG,WAAW,GAAG,IAAI;IAcxD,MAAM,CAAC,UAAU,CAAC,KAAK,EAAE,OAAO,GAAG,WAAW,GAAG,IAAI;CAatD"}
