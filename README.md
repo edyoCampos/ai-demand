@@ -1,8 +1,8 @@
-# DemandAI Kernel
+# aidemand Kernel
 
 **High-Performance Autonomous Agent Orchestration Layer**
 
-DemandAI is an event-driven kernel designed for orchestrating autonomous agents. It provides a robust abstraction layer for Large Language Model (LLM) inference, integrating immutable event-sourced persistence, semantic context management, and standardized multi-agent delegation protocols.
+aidemand is an event-driven kernel designed for orchestrating autonomous agents. It provides a robust abstraction layer for Large Language Model (LLM) inference, integrating immutable event-sourced persistence, semantic context management, and standardized multi-agent delegation protocols.
 
 ## Key Features
 
@@ -24,12 +24,12 @@ The kernel acts as a middleware between client applications and inference provid
 
 ### Installation
 ```bash
-npm install demand-bot
+npm install aidemand
 ```
 
 ### Basic Initialization
 ```typescript
-import { DemandAI, PostgresPersistence, ProviderManager } from 'demandai';
+import { DemandAI, PostgresPersistence, ProviderManager } from 'aidemand';
 
 // Initialize PostgreSQL adapter
 const persistence = new PostgresPersistence({
@@ -58,4 +58,4 @@ const response = await kernel.execute("Analyze infrastructure logs");
 - [LLM Interaction Guidelines](./LLM-CONTEXT.md)
 
 ---
-© 2026 DemandAI Engineering. Professional-grade agent orchestration.
+© 2026 aidemand Engineering. Professional-grade agent orchestration.

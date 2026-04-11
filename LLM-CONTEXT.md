@@ -1,6 +1,6 @@
-# DemandAI: Technical Directives for Inference Engines
+# aidemand: Technical Directives for Inference Engines
 
-This document defines the operational protocols and architectural constraints for Language Models (LLMs) interacting with the DemandAI Kernel.
+This document defines the operational protocols and architectural constraints for Language Models (LLMs) interacting with the aidemand Kernel.
 
 ## 1. Context Pipeline and Semantic Folding
 

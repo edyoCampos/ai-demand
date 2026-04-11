@@ -1,6 +1,6 @@
-# Architectural Specification: DemandAI Kernel
+# Architectural Specification: aidemand Kernel
 
-DemandAI is architected as a modular, event-driven orchestration layer for autonomous agent execution. The system prioritizes immutability, context optimization, and provider agnosticism.
+aidemand is architected as a modular, event-driven orchestration layer for autonomous agent execution. The system prioritizes immutability, context optimization, and provider agnosticism.
 
 ## 1. System Topology
 
@@ -8,7 +8,7 @@ The kernel operates as a stateful middleware between an arbitrary inference prov
 
 ```mermaid
 graph TD
-    User([User Request]) --> Kernel[DemandAI Kernel]
+    User([User Request]) --> Kernel[aidemand Kernel]
     Kernel --> ContextEng[Context Engine]
     ContextEng --> Folding[Semantic Folding Pipeline]
     Folding --> Provider[LLM Provider Adapter]
@@ -49,4 +49,4 @@ The `Resilience Engine` ensures stability across different LLM providers:
 - **Diagnostics**: Periodic health checks via the `Doctor` module.
 
 ---
-© 2026 DemandAI Core Engineering. Immutability. Optimization. Resilience.
+© 2026 aidemand Core Engineering. Immutability. Optimization. Resilience.
