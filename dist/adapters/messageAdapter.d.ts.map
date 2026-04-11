@@ -1,1 +1,0 @@
-{"version":3,"file":"messageAdapter.d.ts","sourceRoot":"","sources":["../../src/adapters/messageAdapter.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,OAAO,EAAE,MAAM,0BAA0B,CAAA;AAEvD,MAAM,MAAM,iBAAiB,GAAG,WAAW,GAAG,QAAQ,CAAA;AAEtD,qBAAa,cAAc;IACzB,MAAM,CAAC,OAAO,CAAC,QAAQ,EAAE,OAAO,EAAE,EAAE,MAAM,EAAE,iBAAiB,GAAG,MAAM,CAAC,MAAM,EAAE,OAAO,CAAC,EAAE;CAW1F"}

@@ -1,0 +1,63 @@
+# IDEs and Editors
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript/JavaScript
+dist/
+lib-cov/
+coverage/
+*.lcov
+.tsbuildinfo
+*.js.map
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Environment and Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.kernel
+*.pem
+
+# Diagnostic and temporary files
+.npm
+.eslintcache
+.stylelintcache
+.cache/
+.parcel-cache/
+.next/
+.serverless/
+.fusebox/
+.dynamodb/
+
+# Local database files
+*.db
+*.sqlite
+
+# DemandAI specific
+docs/wiki/*.md
+!docs/wiki/.gitkeep
+examples/*.local.ts
+scripts/*.local.ts
