@@ -20,6 +20,10 @@ export interface PersistenceAdapter {
   saveMetadata(key: string, value: any): Promise<void>;
   loadMetadata(key: string): Promise<any>;
   
+  // Wiki Methods
+  saveWikiEntry(entry: { title: string, content: string, metadata?: any, embedding: number[] }): Promise<string>;
+  searchWiki(embedding: number[], limit?: number): Promise<any[]>;
+  
   close?(): Promise<void>;
 }
 
@@ -61,7 +65,7 @@ export class MemoryPersistence implements PersistenceAdapter {
     return res ? res[0] : null;
   }
 
-  async saveWikiEntry(_entry: any): Promise<string> {
+  async saveWikiEntry(entry: { title: string, content: string, metadata?: any, embedding: number[] }): Promise<string> {
     return 'memory-id';
   }
 
