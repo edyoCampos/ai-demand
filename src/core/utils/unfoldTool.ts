@@ -1,6 +1,5 @@
 import { z } from 'zod';
 import { PersistenceAdapter } from '../persistence.js';
-import { PostgresPersistence } from '../../adapters/persistence/postgres.js';
 
 /**
  * Creates the expand_content tool.
