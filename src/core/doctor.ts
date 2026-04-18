@@ -1,4 +1,3 @@
-import { z } from 'zod';
 import { ProviderAdapter } from '../providers/types.js';
 import { MCPManager } from './mcp/manager.js';
 
