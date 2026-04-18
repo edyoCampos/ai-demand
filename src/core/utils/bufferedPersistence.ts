@@ -56,6 +56,15 @@ export class BufferedPersistence implements PersistenceAdapter {
     }
   }
 
+  // Metadata Methods (Proxy)
+  async saveMetadata(key: string, value: any): Promise<void> {
+    await this.basePersistence.saveMetadata(key, value);
+  }
+
+  async loadMetadata(key: string): Promise<any> {
+    return await this.basePersistence.loadMetadata(key);
+  }
+
   // Wiki Methods (Proxy para a persistência base)
   async saveWikiEntry(entry: any): Promise<string> {
     return await this.basePersistence.saveWikiEntry(entry);
