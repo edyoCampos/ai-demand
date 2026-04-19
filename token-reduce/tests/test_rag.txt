@@ -1,0 +1,8 @@
+[DOC-01]
+Antigravity is an advanced agentic AI coding assistant designed by Google Deepmind. It specializes in pair programming and complex codebase modifications. The system uses a multi-agent orchestration pattern to solve tasks efficiently. Antigravity is part of the Advanced Agentic Coding team's efforts.
+
+[DOC-02]
+Google Deepmind's Antigravity assistant is focused on helping users with coding tasks. It is designed to work as a powerful powerful pair programmer. The assistant can modify existing codebases and create new ones from scratch. It utilizes agentic behaviors to handle complex developer workflows.
+
+[DOC-03]
+The Advanced Agentic Coding team developed Antigravity, an AI assistant for code. It is designed for powerful pair programming. Antigravity can solve complex coding problems and modify projects. It is an agentic AI developed by Deepmind.

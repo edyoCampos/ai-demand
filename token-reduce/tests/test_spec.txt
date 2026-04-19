@@ -1,0 +1,17 @@
+# Sistema de Monitoramento de Rede v2.0
+
+## Requisitos Funcionais
+
+| ID | Descrição | Prioridade |
+|---|---|---|
+| RF-01 | O sistema deve monitorar pacotes TCP/UDP em tempo real. | Alta |
+| RF-02 | O painel deve exibir alertas visuais em menos de 500ms. | Média |
+| RF-03 | O histórico deve ser persistido em banco de dados WAL. | Alta |
+
+## Detalhes Técnicos
+
+Os identificadores de rede (Net-IDs) seguem o padrão EC-100, EC-101 e EC-102. 
+É obrigatória a configuração do tempo de retry para 3 tentativas.
+Nunca desligue o log de erro sem autorização prévia.
+O sistema não deve falhar graciosamente em caso de pânico de memória (Panic).
+Devemos atingir o target de latência de 10ms.
