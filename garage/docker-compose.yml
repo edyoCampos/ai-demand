@@ -1,0 +1,42 @@
+services:
+  # 🤖 Ollama (Inspecção de Modelos Simples)
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama_lab
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    restart: always
+
+  # 🚀 LocalAI (Clone da API OpenAI)
+  localai:
+    image: localai/localai:latest
+    container_name: localai_lab
+    ports:
+      - "8080:8080"
+    environment:
+      - MODELS_PATH=/models
+      - CONTEXT_SIZE=4096
+      - THREADS=4
+    volumes:
+      - ./localai_models:/models
+    restart: always
+
+  # 🐘 PostgreSQL (Persistência Real com suporte a Vetores)
+  db:
+    image: ankane/pgvector:latest
+    container_name: postgres_lab
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=demand_user
+      - POSTGRES_PASSWORD=demand_pass
+      - POSTGRES_DB=demand_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  ollama_data:
+  postgres_data:
